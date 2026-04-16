@@ -5,7 +5,7 @@ import pytest
 from pytest_embedded import Dut
 
 
-@pytest.mark.esp32_p4_function_ev_board
-@pytest.mark.esp32_s3_korvo_2
+@pytest.mark.runner_esp32_p4_function_ev_board
+@pytest.mark.runner_esp32_s3_korvo_2
 def test_example_sdcard(dut: Dut) -> None:
     dut.expect_exact('example: Testing of SD card passed!')

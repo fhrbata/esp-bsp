@@ -5,7 +5,7 @@ import pytest
 from pytest_embedded import Dut
 
 
-@pytest.mark.esp_bsp_devkit
-@pytest.mark.esp_bsp_generic
+@pytest.mark.runner_esp32_s3_devkitc_1_1
+@pytest.mark.runner_esp32_s2_devkitc_1
 def test_example_generic_button_led(dut: Dut) -> None:
     dut.expect_exact('main_task: Returned from app_main()')

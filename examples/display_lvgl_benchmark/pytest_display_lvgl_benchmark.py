@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023-2025 Espressif Systems (Shanghai) CO LTD
+# SPDX-FileCopyrightText: 2023-2026 Espressif Systems (Shanghai) CO LTD
 # SPDX-License-Identifier: CC0-1.0
 
 import os
@@ -54,14 +54,13 @@ def get_test_diff(test1, test2, name, positive):
         return f"*<span style=\"color:{color}\"><sub>({sign}{diff})</sub></span>*"
 
 
-@pytest.mark.esp_box_3
-@pytest.mark.esp32_p4_function_ev_board
-@pytest.mark.esp32_s3_eye
-@pytest.mark.esp32_s3_lcd_ev_board
-@pytest.mark.esp32_s3_lcd_ev_board_2
-@pytest.mark.m5dial
-@pytest.mark.m5stack_core_s3
-@pytest.mark.m5stack_core_s3_se
+@pytest.mark.runner_esp_box_3
+@pytest.mark.runner_esp32_p4_function_ev_board
+@pytest.mark.runner_esp32_s3_eye
+@pytest.mark.runner_esp32_s3_lcd_ev_board
+@pytest.mark.runner_esp32_s3_lcd_ev_board_2
+@pytest.mark.runner_m5dial
+@pytest.mark.runner_m5stack_core_s3
 def test_example_lvgl_benchmark(dut: Dut, request) -> None:
     date = datetime.datetime.now()
     board = request.node.callspec.id
