@@ -10,7 +10,7 @@ This repository provides **Board Support Packages (BSPs)** for various Espressif
 
 ## Main Purpose of BSP
 
-1. **Simplify development** on Espressif and M5Stack boards by providing ready-to-use peripheral initialization.
+1. **Simplify development** on Espressif and M5Stack boards by providing ready-to-use peripheral initialization. ddd
 2. **Enable quick project startup** on supported development boards, with an easy path to **migrate to custom hardware**.
 3. **Facilitate cross-board development** by offering a **common API**, making it easier to build and maintain projects for multiple boards.
 
